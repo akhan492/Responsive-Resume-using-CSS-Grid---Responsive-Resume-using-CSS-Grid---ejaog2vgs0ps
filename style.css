@@ -1,9 +1,108 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 /* Write CSS code below */
+.main-content {
+  min-height: 1000px;
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: 300px 700px;
+  width: 90%;
+}
+.left-section {
+ 
+  grid-column: span 1;
+  background-color: #003147;
+  color: aliceblue;
+  }
+.right-section {
+
+  /* width: 90%; */
+  /* grid-column:2/-1 ; */
+  grid-column: span 1 / span 2;
+
+  background-color: rgb(143, 179, 190) ;
+  color: aliceblue;
+  
+}
+
+.left-content {
+  padding: 1rem;
+}
+.profile img {
+  width: 60%;
+  border-radius: 30%;
+  border: 5px white solid;
+  display: block;
+  margin: auto;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
+  text-transform: uppercase;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+.social-media {
+  display: flex;
+  
+  justify-content: space-evenly; 
+  text-align: center;
+}
+.skills {
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+
+}
+.skill-name{
+  font-size: 0.65rem;
+  font-weight: 0.65rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.progress-bar {
+ 
+  border: 1px white solid;
+  height: 4px;
+}
+.right-main-content {
+  padding: 3rem 2rem;
+}
+.right-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5;
+  letter-spacing: 1px;
+}
+/* media quries */
+@media screen and (max-width: 673px) {
+  .main-content{
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+  .profile img{
+    width: 40%;
+  }
+}
+
