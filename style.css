@@ -20,6 +20,7 @@
   grid-column: span 1;
   background-color: #003147;
   color: aliceblue;
+  min-height:1000px ;
   }
 .right-section {
 
@@ -29,6 +30,7 @@
 
   background-color: rgb(143, 179, 190) ;
   color: aliceblue;
+  min-height: 1000px;
   
 }
 
@@ -63,7 +65,7 @@
   padding: 1rem;
 }
 .social-media {
-  display: flex;
+  display: grid;
   
   justify-content: space-evenly; 
   text-align: center;
@@ -94,6 +96,7 @@
   font-weight: 700;
   padding: 0.5;
   letter-spacing: 1px;
+  text-align: left;
 }
 /* media quries */
 @media screen and (max-width: 673px) {
